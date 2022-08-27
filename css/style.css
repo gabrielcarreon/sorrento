@@ -1,0 +1,78 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+body{
+	margin: 0px;
+	font-family: Helvetica, sans-serif;
+}
+header{
+	background-image: url('../images/back_beach.jpg');
+	padding: 4rem;
+	background-repeat: none;
+	background-position: center;
+	background-size: 100%;
+}
+header img{
+	width: 100%;
+}
+header h1{
+	text-align: center;
+	color: #87423c;
+	font-size: 36px;
+}
+li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	transition: padding .4s ease;
+}
+li:hover{
+	background: rgba(255,255,255, .7);
+
+	padding-left: 2rem;
+	color: #555;
+}
+li a{
+	color: #4d1d18;
+	text-decoration: none;
+	font-family: Calibri, sans-serif;
+}
+nav{
+	position: sticky;
+	left: 0;
+	background: #f0ad75;
+	height: 100vh;
+	width: 25%;
+	float: left;
+}
+section{
+	width: 75%;
+	float: right;
+}
+ul{
+	justify-content: space-between;
+	list-style-type: none;
+}
+.logo{
+	width: 100%;
+}
+.left{
+	width: 30%;
+	float: left;
+}
+.right{
+	width: 70%;
+	float: right;
+}
+.nav-links{
+}
+
