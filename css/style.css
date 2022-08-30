@@ -1,36 +1,45 @@
 * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-        font-family: Helvetica, sans-serif;
-    }
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: Helvetica, sans-serif;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:visited{
+	color: inherit;
+}
 footer{
+	/* display: flex; */
+	margin: 0px 5%;
+	color: #87423c ;
+}
+footer h2{
+	margin-top: 5rem;
+	font-size: 36px;
 	color: #87423c;
 }
-footer h3{
-	color: #87423c;
-	padding-top: 1rem;
-	text-align: center;
+h3{
 	font-size: 24px;
+
 }
-footer h4{
-	color: #4d1d18;
-	padding-top: .5rem;
-	text-align: center;
-	font-size: 18px;
-	font-family: Calibri, sans-serif;
-	margin-bottom: 2rem;
+hr{
+	margin: 1rem 0px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-main{	display: flex;
-	background-size: 100%;
-	background: url('../images/sorrento_from_jetty.jpg');
-	background-size: 100%;
-	background-position: center;
-	background-repeat: none;
+main{	
+	display: flex;
 }
 main h1{
 	text-align: center;
@@ -44,74 +53,73 @@ nav{
 	background: #682721;
 	  box-shadow: 5px 10px;
 }
-P{
-	line-height: 150%;
+p{
+	/* line-height: 150%; */
 }
 .active{
-	border-radius: 50% !important;
-}
-.address{
-	width: 33%;
-	text-align: center;
-	line-height: 150%;
-	font-family: Calibri, sans-serif;
-}
-.address p{
-	font-family: Calibri, sans-serif;
-
+	transform: rotate(40deg);
 }
 .content{
 	background: rgba(255,255,255,.4);
-}
-.footer_contents{
-	display: flex;
-	align-items: center;
-}
-.footer_links{
-	width: 33%;
-}
-.footer_links ul{
-	list-style-type: none;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.footer_links ul li{
-	cursor: pointer;
-	width: 6rem;
-	margin-bottom: .4rem;
-	padding: .8rem 2rem;
-	border: 1px solid #87423c;
-	border-radius: .2rem;
-	transition: background-color .2s ease;
-	transition: color .2s ease;
-}
-.footer_links ul li:hover{
-	background-color: #87423c;
-	color: whitesmoke;
 }
 .logo{
 	max-height: 4rem;
 	cursor: pointer;
 }
+.footer_links{
+	width: 33%;
+	margin: 2rem 2rem 0rem 2rem;
+}
+.footer_links h3{
+	margin-bottom: 1rem;
+}
+.footer_links ul li{
+	list-style-type: none;
+	margin-bottom: 1rem;
+}
+.footer_location{
+	width: 33%;
+	margin: 2rem 2rem 0rem 2rem;
+}
+.footer_location div{
+	display: flex;
+}
+.footer_location h3{
+	margin-bottom: 1rem;
+}
+.footer_policy{
+	width: 33%;
+	margin: 2rem 2rem 0rem 2rem;
+}
+.footer_policy ul{
+	list-style-type: none;
+}
+.footer_policy h3{
+	margin-bottom: 1rem;
+
+}
+.footer_policy ul li{
+	margin: 1rem 0px;
+}
+.footer_social_links{
+	display: flex;
+	justify-content: center;
+}
+.footer_social_links img{
+	margin: 1rem 1rem;
+}
 .main_left{
 	display: flex;
 	flex-direction: column;
-	background: rgba(255,255,255, .4);
-	width: 40%;
-	padding-top: 2rem;
-	padding-right: 5%;
-	padding-left: 5%;
-	justify-content: center;
-	text-align: justify;
+	/* background: rgba(255,255,255, .4); */
+	width: 50%;
 }
-
 .main_left h1{
 	font-size: 36px;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
 }
 .main_left h2{
+	margin: 2rem 0px;
 	text-align: center;
 	font-size: 24px;
 	font-family: Calibri, sans-serif;
@@ -120,22 +128,18 @@ P{
 .main_left img{
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 50vw;
+	margin-bottom: 2rem;
 }
 .main_right{
 	display: flex;
-	background: rgba(0,0,0, .4);
 	justify-content: center;
 	width: 50%;
 }
 .map{
-	width: 33%;
-	display: flex;
-	justify-content: center;
-}
-.map iframe{
-	max-height: 13rem;
-	max-width: 26rem;
+	margin-left: 2rem;
+	width: 20rem;
+	height: 10rem;
 }
 .nav-links{
 	display: flex;
@@ -161,22 +165,13 @@ P{
 	/*border-radius: .4rem;*/
 	background: white;
 	transition: background-color .2s ease;
-
 }
 .nav-links li:hover{
 	color: #555;
 	/*color: whitesmoke;*/
 }
-
-.social_media_links{
-	margin-top: 2rem;
+.row{
 	display: flex;
-	justify-content: center;
-}
-.social_media_links a{
-	cursor: pointer;
-	margin: 0px 1rem;
-	margin-bottom: 1rem;
 }
 /*.nav-links li:last-of-type{
 	margin-left: 1rem;
