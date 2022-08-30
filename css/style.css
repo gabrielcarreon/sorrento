@@ -6,73 +6,178 @@
         font-size: 100%;
         vertical-align: baseline;
         background: transparent;
+        font-family: Helvetica, sans-serif;
     }
-
-body{
-	margin: 0px;
-	font-family: Helvetica, sans-serif;
-}
-header{
-	background-image: url('../images/back_beach.jpg');
-	padding: 4rem;
-	background-repeat: none;
-	background-position: center;
-	background-size: 100%;
-}
-header img{
-	width: 100%;
-}
-header h1{
-	text-align: center;
+footer{
 	color: #87423c;
-	font-size: 36px;
 }
-li{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	transition: padding .4s ease;
+footer h3{
+	color: #87423c;
+	padding-top: 1rem;
+	text-align: center;
+	font-size: 24px;
 }
-li:hover{
-	background: rgba(255,255,255, .7);
-
-	padding-left: 2rem;
-	color: #555;
-}
-li a{
+footer h4{
 	color: #4d1d18;
-	text-decoration: none;
+	padding-top: .5rem;
+	text-align: center;
+	font-size: 18px;
 	font-family: Calibri, sans-serif;
+	margin-bottom: 2rem;
+}
+main{	display: flex;
+	background-size: 100%;
+	background: url('../images/sorrento_from_jetty.jpg');
+	background-size: 100%;
+	background-position: center;
+	background-repeat: none;
+}
+main h1{
+	text-align: center;
+	font-size: 36px;
+	color: #87423c;
 }
 nav{
-	position: sticky;
-	left: 0;
-	background: #f0ad75;
-	height: 100vh;
-	width: 25%;
-	float: left;
-}
-section{
-	width: 75%;
-	float: right;
-}
-ul{
+	max-height: 4rem;
+	display: flex;
 	justify-content: space-between;
+	background: #682721;
+	  box-shadow: 5px 10px;
+}
+P{
+	line-height: 150%;
+}
+.active{
+	border-radius: 50% !important;
+}
+.address{
+	width: 33%;
+	text-align: center;
+	line-height: 150%;
+	font-family: Calibri, sans-serif;
+}
+.address p{
+	font-family: Calibri, sans-serif;
+
+}
+.content{
+	background: rgba(255,255,255,.4);
+}
+.footer_contents{
+	display: flex;
+	align-items: center;
+}
+.footer_links{
+	width: 33%;
+}
+.footer_links ul{
 	list-style-type: none;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer_links ul li{
+	cursor: pointer;
+	width: 6rem;
+	margin-bottom: .4rem;
+	padding: .8rem 2rem;
+	border: 1px solid #87423c;
+	border-radius: .2rem;
+	transition: background-color .2s ease;
+	transition: color .2s ease;
+}
+.footer_links ul li:hover{
+	background-color: #87423c;
+	color: whitesmoke;
 }
 .logo{
-	width: 100%;
+	max-height: 4rem;
+	cursor: pointer;
 }
-.left{
-	width: 30%;
-	float: left;
-}
-.right{
-	width: 70%;
-	float: right;
-}
-.nav-links{
+.main_left{
+	display: flex;
+	flex-direction: column;
+	background: rgba(255,255,255, .4);
+	width: 40%;
+	padding-top: 2rem;
+	padding-right: 5%;
+	padding-left: 5%;
+	justify-content: center;
+	text-align: justify;
 }
 
+.main_left h1{
+	font-size: 36px;
+	margin-bottom: 2rem;
+}
+.main_left h2{
+	text-align: center;
+	font-size: 24px;
+	font-family: Calibri, sans-serif;
+	color:  #4d1d18;
+}
+.main_left img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+.main_right{
+	display: flex;
+	background: rgba(0,0,0, .4);
+	justify-content: center;
+	width: 50%;
+}
+.map{
+	width: 33%;
+	display: flex;
+	justify-content: center;
+}
+.map iframe{
+	max-height: 13rem;
+	max-width: 26rem;
+}
+.nav-links{
+	display: flex;
+	align-items: center;
+}
+.nav-links li:nth-of-type(1){
+	border-radius: .2rem 0px 0px .2rem;
+}
+.nav-links li:nth-of-type(4){
+	border-radius: 0px .2rem .2rem 0px;
+	margin-right: 1rem;
+}
+.nav-links li{
+	/*margin: 0px 1rem;*/
+	padding: 1rem 1rem;
+	list-style-type: none;
+	cursor: pointer;
+	color: #4d1d18;
+	font-family: Calibri, sans-serif;
+	border-style: none solid none none;
+	border-width: 1px;
+	border-color: #555;
+	/*border-radius: .4rem;*/
+	background: white;
+	transition: background-color .2s ease;
+
+}
+.nav-links li:hover{
+	color: #555;
+	/*color: whitesmoke;*/
+}
+
+.social_media_links{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+.social_media_links a{
+	cursor: pointer;
+	margin: 0px 1rem;
+	margin-bottom: 1rem;
+}
+/*.nav-links li:last-of-type{
+	margin-left: 1rem;
+}*/
