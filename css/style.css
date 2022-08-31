@@ -3,10 +3,12 @@
 	padding: 0;
 	border: 0;
 	outline: 0;
-	font-size: 100%;
+	font-size: 16px;
 	vertical-align: baseline;
 	background: transparent;
 	font-family: Helvetica, sans-serif;
+	scroll-behavior: smooth;
+
 }
 a{
 	text-decoration: none;
@@ -20,17 +22,27 @@ a:visited{
 }
 footer{
 	/* display: flex; */
-	margin: 0px 5%;
+	border-top: 1px solid #87423c;
+	padding: 0px 5%;
 	color: #87423c ;
 }
 footer h2{
-	margin-top: 5rem;
-	font-size: 36px;
+	margin-top: 3rem;
+	font-size: 24px;
 	color: #87423c;
 }
-h3{
+h2{
 	font-size: 24px;
-
+	color: #4d1d18;
+}
+h3{
+	font-size: 20px;
+	text-align: center;
+}
+h5{
+	font-size: 20px;
+	font-weight: 400;
+	color: #4d1d18;
 }
 hr{
 	margin: 1rem 0px;
@@ -39,7 +51,7 @@ hr{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 main{	
-	display: flex;
+
 }
 main h1{
 	text-align: center;
@@ -50,17 +62,133 @@ nav{
 	max-height: 4rem;
 	display: flex;
 	justify-content: space-between;
+	position: sticky;
+	top: 0;
 	background: #682721;
-	  box-shadow: 5px 10px;
 }
 p{
-	/* line-height: 150%; */
+	 line-height: 150%; 
+	 font-family: Calibri, sans-serif;
 }
+#booknow{
+	cursor: pointer;
+	margin-top: 2rem;
+	border: 1px solid #4d87d9;
+	border-radius: .2rem;
+	padding: 1rem 2rem;
+	background-color:#4d87d9;
+	color: black;
+	transition: background-color .2s ease;
+}
+#booknow:hover{
+	background-color: white;
+
+}
+#home{
+		display: flex;
+}
+#home .main_left{
+	display: flex;
+	flex-direction: column;
+	/* background: rgba(255,255,255, .4); */
+	width: 50%;
+}
+#home .main_left h1{
+	font-size: 36px;
+	/* margin-bottom: 2rem; */
+}
+#home .main_left h2{
+	margin: 2rem 0px;
+	text-align: center;
+	font-size: 24px;
+	font-family: Calibri, sans-serif;
+	color:  #4d1d18;
+}
+#home .main_left img{
+	width: 100%;
+}
+#home .main_right{
+	/*display: flex;*/
+	justify-content: center;
+	width: 40%;
+	padding: 0px 5%;
+	text-align: center;
+}
+#home .main_right h1{
+	margin-top: 30%;
+}
+#home .main_right p{
+	margin-top: 2rem;
+	text-align: justify;
+}
+#pricing{
+	background-image: url('../images/ocean_beach3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 4rem 0px;
+}
+#pricing h2{
+	text-align: center;
+	margin-bottom: 2rem;
+	padding-top: 2rem;
+}
+#pricing .main_left{
+	/*display: flex;*/
+	justify-content: center;
+	width: 50%;
+	text-align: center;
+}
+#pricing .main_left img{
+	height: 100%;
+}
+#pricing .main_right{
+	width: 50%;
+}
+#pricing .main_right{
+	/*display: flex;*/
+	margin-top: 5rem;
+	justify-content: center;
+	width: 50%;
+	text-align: center;
+}
+#pricing .main_right h5{
+	margin-bottom: 2rem;
+}
+#pricing .main_right img{
+	height: 80%;
+}
+#sites{
+	text-align: center;
+}
+#sites h2{
+	margin-top: 2rem;
+	text-align: center;
+}
+#sites img{
+	width: 100%;
+}
+#sites p{
+	text-align: justify;
+}
+#sites .main_left{
+	width: 50%;
+}
+#sites .main_right{
+	width: 50%;
+}
+
+
+
+
+
 .active{
 	transform: rotate(40deg);
 }
 .content{
 	background: rgba(255,255,255,.4);
+}
+.d-flex{
+	display: flex;
 }
 .logo{
 	max-height: 4rem;
@@ -107,39 +235,23 @@ p{
 }
 .footer_social_links img{
 	margin: 1rem 1rem;
+	cursor: pointer;
 }
-.main_left{
-	display: flex;
-	flex-direction: column;
-	/* background: rgba(255,255,255, .4); */
-	width: 50%;
-}
-.main_left h1{
-	font-size: 36px;
-	/* margin-bottom: 2rem; */
-}
-.main_left h2{
-	margin: 2rem 0px;
-	text-align: center;
-	font-size: 24px;
-	font-family: Calibri, sans-serif;
-	color:  #4d1d18;
-}
-.main_left img{
-	margin-left: auto;
-	margin-right: auto;
-	width: 50vw;
-	margin-bottom: 2rem;
-}
-.main_right{
-	display: flex;
-	justify-content: center;
-	width: 50%;
+.jumbotron{
+	/*margin-left: auto;*/
+	border-radius: 1rem;
+	margin: auto;
+	height: 120vh;
+	width: 70vw;
+	background-color: rgba(255, 255, 255, .8);
 }
 .map{
 	margin-left: 2rem;
 	width: 20rem;
 	height: 10rem;
+}
+.mb-4{
+	margin-bottom: 4rem;
 }
 .nav-links{
 	display: flex;
@@ -169,6 +281,9 @@ p{
 .nav-links li:hover{
 	color: #555;
 	/*color: whitesmoke;*/
+}
+.px-10{
+	padding: 0px 5%;
 }
 .row{
 	display: flex;
