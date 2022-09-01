@@ -20,10 +20,16 @@ a:hover{
 a:visited{
 	color: inherit;
 }
+a:active{
+	text-decoration: underline;
+}
 footer{
 	/* display: flex; */
 	border-top: 1px solid #87423c;
 	padding: 0px 5%;
+	color: #87423c ;
+}
+footer a{
 	color: #87423c ;
 }
 footer h2{
@@ -66,13 +72,15 @@ nav{
 	top: 0;
 	background: #682721;
 }
+nav a{
+	color: #4d1d18;
+}
 p{
 	 line-height: 150%; 
 	 font-family: Calibri, sans-serif;
 }
 #booknow{
 	cursor: pointer;
-	margin-top: 2rem;
 	border: 1px solid #4d87d9;
 	border-radius: .2rem;
 	padding: 1rem 2rem;
@@ -121,6 +129,46 @@ p{
 	margin-top: 2rem;
 	text-align: justify;
 }
+#location{
+	display: flex;
+}
+#location .main_left{
+	width: 30%;
+	margin: 0px 10%;
+}
+#location .main_left p{
+	text-align: justify;
+	margin-bottom: 2rem;
+}
+#location .main_right{
+	width: 50%;
+	margin: 2rem 0px;
+}
+#location .main_left h2{
+	margin: 2rem 0px;
+	text-align: center;
+}
+#petpolicies{
+	display: flex;
+}
+#petpolicies .main_left{
+	width: 50%;
+}
+#petpolicies .main_left img{
+	height: 100%;
+	width: 100%;
+}
+#petpolicies .main_right{
+	width: 30%;
+	margin: 0% 10%;
+}
+#petpolicies .main_right h2{
+	margin: 3rem 0px 2rem 0px;
+	text-align: center;
+}
+#petpolicies .main_right p{
+	text-align: justify;
+}
 #pricing{
 	background-image: url('../images/ocean_beach3.jpg');
 	background-repeat: no-repeat;
@@ -132,6 +180,18 @@ p{
 	margin-bottom: 2rem;
 	padding-top: 2rem;
 }
+#pricing h4{
+	margin-top: 2rem;
+	text-align: center;
+	font-family: Calibri, sans-serif;
+}
+#pricing p{
+	text-align: center;
+}
+#pricing h5{
+	margin: 2rem 0px 1rem 0px;
+	text-align: center;
+}
 #pricing .main_left{
 	/*display: flex;*/
 	justify-content: center;
@@ -142,17 +202,13 @@ p{
 	height: 100%;
 }
 #pricing .main_right{
-	width: 50%;
-}
-#pricing .main_right{
 	/*display: flex;*/
-	margin-top: 5rem;
 	justify-content: center;
 	width: 50%;
 	text-align: center;
 }
 #pricing .main_right h5{
-	margin-bottom: 2rem;
+	margin: 2rem 0px 1rem 0px;
 }
 #pricing .main_right img{
 	height: 80%;
@@ -176,8 +232,16 @@ p{
 #sites .main_right{
 	width: 50%;
 }
-
-
+#testimonials h2{
+	padding-top: 4rem;
+	text-align: center;
+}
+#testimonials .main_left{
+	width: 50%;
+}
+#testimonials .main_right{
+	width: 50%;
+}
 
 
 
@@ -241,7 +305,7 @@ p{
 	/*margin-left: auto;*/
 	border-radius: 1rem;
 	margin: auto;
-	height: 120vh;
+	height: 100vh;
 	width: 70vw;
 	background-color: rgba(255, 255, 255, .8);
 }
