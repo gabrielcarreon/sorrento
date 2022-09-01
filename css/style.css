@@ -214,14 +214,23 @@ p{
 	height: 80%;
 }
 #sites{
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 }
 #sites h2{
 	margin-top: 2rem;
 	text-align: center;
 }
-#sites img{
+#sites .header{
 	width: 100%;
+	height: 40vh;
+	overflow: hidden;
+}
+#sites img{
+	background-size: cover;
+	width: 100%;
+	/* background-position: bottom right; */
 }
 #sites p{
 	text-align: justify;
@@ -246,7 +255,8 @@ p{
 
 
 .active{
-	transform: rotate(40deg);
+	background-color: #87423c !important;
+	color: white !important;
 }
 .content{
 	background: rgba(255,255,255,.4);
